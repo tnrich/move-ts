@@ -1,5 +1,5 @@
-# Move TS README
-
+# Forked from move-ts 
+# Move TS-JS README
 Supports moving typescript/js files and updating relative imports within the workspace.
 
 ## Features
