@@ -41,7 +41,7 @@
         "commands": [
             {
                 "command": "move-ts-js.move",
-                "title": "Move Typescript"
+                "title": "Move TS/JS"
             },
             {
                 "command": "move-ts-js.reindex",
