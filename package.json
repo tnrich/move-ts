@@ -2,7 +2,7 @@
     "name": "move-ts-js",
     "displayName": "Move TS and JS - Move TypeScript/JS files and update relative imports",
     "description": "extension for moving typescript/JS files and folders and updating relative imports in your workspace",
-    "version": "1.11.9",
+    "version": "1.11.10",
     "publisher": "tnrich",
     "repository": {
         "type": "git",
