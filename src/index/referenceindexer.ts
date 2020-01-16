@@ -38,7 +38,7 @@ export class ReferenceIndexer {
     private tsconfigs: {[key: string]: any};
     public index: ReferenceIndex = new ReferenceIndex();
 
-    private output: vscode.OutputChannel = vscode.window.createOutputChannel('move-ts');
+    private output: vscode.OutputChannel = vscode.window.createOutputChannel('move-ts-js');
 
     private packageNames: {[key: string]: string} = {};
 
@@ -59,7 +59,7 @@ export class ReferenceIndexer {
                     return this.attachFileWatcher();
                 })
                 .then(() => {
-                    console.log('move-ts initialized');
+                    console.log('move-ts-js initialized');
                     this.isInitialized = true;
                 });
         });
@@ -456,7 +456,7 @@ export class ReferenceIndexer {
                 }
 
                 if (progress) {
-                    progress.report({message: 'move-ts indexing... ' + index + '/' + files.length + ' indexed'});
+                    progress.report({message: 'move-ts-js indexing... ' + index + '/' + files.length + ' indexed'});
                 }
 
                 if (index < files.length) {

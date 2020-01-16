@@ -1,9 +1,9 @@
 # Move TS README
 
-Supports moving typescript files and updating relative imports within the workspace.
+Supports moving typescript/js files and updating relative imports within the workspace.
 
 ## Features
-Moves TypeScript files and folders containing TypeScript and updates their relative import paths.
+Moves TypeScript/js files and folders containing TypeScript/js and updates their relative import paths.
 
 ## How to use
 
@@ -14,6 +14,10 @@ Moves TypeScript files and folders containing TypeScript and updates their relat
 <!--## Known Issues-->
 
 ## Release Notes
+
+## 1.11.6
+
+Add support for refactoring js files.
 
 ## 1.11.3
 
@@ -76,7 +80,7 @@ Allow initiating moving the current file with a hotkey. To use edit keybindings.
 ```json
 {
     "key": "ctrl+alt+m",
-    "command": "move-ts.move",
+    "command": "move-ts-js.move",
     "when": "editorTextFocus"
 }
 ```

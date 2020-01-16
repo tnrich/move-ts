@@ -1,14 +1,14 @@
 {
-    "name": "move-ts",
-    "displayName": "Move TS - Move TypeScript files and update relative imports",
-    "description": "extension for moving typescript files and folders and updating relative imports in your workspace",
-    "version": "1.11.5",
-    "publisher": "stringham",
+    "name": "move-ts-js",
+    "displayName": "Move TS and JS - Move TypeScript/JS files and update relative imports",
+    "description": "extension for moving typescript/JS files and folders and updating relative imports in your workspace",
+    "version": "1.11.6",
+    "publisher": "tnrich",
     "repository": {
         "type": "git",
-        "url": "https://github.com/stringham/move-ts.git"
+        "url": "https://github.com/tnrich/move-ts.git"
     },
-    "homepage": "https://github.com/stringham/move-ts",
+    "homepage": "https://github.com/tnrich/move-ts",
     "icon": "icon.png",
     "keywords": [
         "typescript",
@@ -24,15 +24,15 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:move-ts.move",
-        "onCommand:move-ts.reindex"
+        "onCommand:move-ts-js.move",
+        "onCommand:move-ts-js.reindex"
     ],
     "main": "./out/src/extension",
     "contributes": {
         "menus": {
             "explorer/context": [
                 {
-                    "command": "move-ts.move",
+                    "command": "move-ts-js.move",
                     "group": "1_modification",
                     "when": "explorerViewletVisible"
                 }
@@ -40,11 +40,11 @@
         },
         "commands": [
             {
-                "command": "move-ts.move",
+                "command": "move-ts-js.move",
                 "title": "Move Typescript"
             },
             {
-                "command": "move-ts.reindex",
+                "command": "move-ts-js.reindex",
                 "title": "Move TS: Reindex"
             }
         ],

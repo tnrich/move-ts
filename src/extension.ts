@@ -126,7 +126,7 @@ export function activate(context: vscode.ExtensionContext) {
         return vscode.window.withProgress(
             {
                 location: vscode.ProgressLocation.Window,
-                title: 'Move-ts indexing',
+                title: 'Move-ts-js indexing',
             },
             async (progress) => {
                 return importer.init(progress);
@@ -141,7 +141,7 @@ export function activate(context: vscode.ExtensionContext) {
         return initWithProgress();
     };
 
-    const moveDisposable = vscode.commands.registerCommand('move-ts.move', (uri?: vscode.Uri, uris?: vscode.Uri[]) => {
+    const moveDisposable = vscode.commands.registerCommand('move-ts-js.move', (uri?: vscode.Uri, uris?: vscode.Uri[]) => {
         if (uris && uris.length > 1) {
             const dir = path.dirname(uris[0].fsPath);
             if (uris.every(u => path.dirname(u.fsPath) == dir)) {
@@ -167,7 +167,7 @@ export function activate(context: vscode.ExtensionContext) {
     });
     context.subscriptions.push(moveDisposable);
 
-    const reIndexDisposable = vscode.commands.registerCommand('move-ts.reindex', () => {
+    const reIndexDisposable = vscode.commands.registerCommand('move-ts-js.reindex', () => {
         return initWithProgress();
     });
     context.subscriptions.push(reIndexDisposable);
