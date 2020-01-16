@@ -65,6 +65,8 @@
                 "movets.filesToScan": {
                     "type": "array",
                     "default": [
+                        "**/*.js",
+                        "**/*.jsx",
                         "**/*.ts",
                         "**/*.tsx"
                     ],

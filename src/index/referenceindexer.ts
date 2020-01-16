@@ -42,7 +42,7 @@ export class ReferenceIndexer {
 
     private packageNames: {[key: string]: string} = {};
 
-    private extensions: string[] = ['.ts', '.tsx'];
+    private extensions: string[] = ['.ts', '.tsx', ".js", ".jsx"];
 
     private paths: string[] = [];
     private filesToExclude: string[] = [];
